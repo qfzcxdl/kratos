@@ -34,6 +34,7 @@ func (e *Error) Error() string {
 		k++
 	}
 	i := 0
+	kk := 1
 	return fmt.Sprintf("error: code = %d reason = %s message = %s metadata = %v cause = %v", e.Code, e.Reason, e.Message, e.Metadata, e.cause)
 }
 
